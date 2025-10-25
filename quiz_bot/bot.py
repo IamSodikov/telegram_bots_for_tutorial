@@ -45,6 +45,7 @@ async def send_question(message: Message):
             f"Qaytadan boshlash uchun /quiz yuboring.",
             reply_markup=ReplyKeyboardRemove()
         )
+        return
 
     question_data = QUESTIONS[current_q]
 
