@@ -1,0 +1,9 @@
+{
+    "jokes": [
+        {"type": "text", "data": "Dasturchi tungi klubga kirdi. Bouncer: 'You must be 21+'. Dasturchi: 'Men 10101 yoshdaman!' (binary 21) 😄"},
+        {"type": "text", "data": "Bug nima? Feature! Feature nima? Bug!"},
+        {"type": "text", "data": "Dasturchi choyxonaga kirdi: 'Bir choy'. Ofitsiant: 'Qand qo'yasizmi?' Dasturchi: 'True'"},
+        {"type": "image", "data": "data/images/meme2.jpeg"},
+        {"type": "image", "data": "data/images/meme3.jpg"}
+    ]
+}
