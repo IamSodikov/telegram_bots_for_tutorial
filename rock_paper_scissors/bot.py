@@ -1,10 +1,8 @@
 import asyncio
 import logging
-from aiogram import Bot, Dispatcher
+from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart
 from aiogram.types import Message, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from aiogram import F
-from aiogram.enums import ParseMode
 from config import BOT_TOKEN, CHOICES
 from game import get_bot_choice, determine_winner
 
