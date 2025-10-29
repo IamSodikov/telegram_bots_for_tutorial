@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
-class SearStates(StatesGroup):
+class SearchStates(StatesGroup):
     waiting_for_query = State()
 
 @dp.message(CommandStart())
@@ -40,9 +40,9 @@ async def search_wiki_handler(message: Message, state: FSMContext):
         "Qidirmoqchi bo'lgan mavzuni yuboring: "
     )
     
-    await state.set_state(SearStates.waiting_for_query)
+    await state.set_state(SearchStates.waiting_for_query)
 
-@dp.message(SearStates.waiting_for_query)
+@dp.message(SearchStates.waiting_for_query)
 async def search_state(message: Message, state: FSMContext):
     query = message.text
 
