@@ -95,7 +95,7 @@ async def get_phone(message: Message, state: FSMContext):
     user_data = await state.get_data()
     user_data["phone"] = message.text
     user_id = message.from_user.id
-
+ 
     save_user_data(user_id, user_data)
 
     await message.answer(
